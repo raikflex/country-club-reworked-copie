@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href=".//IMGS/logo CCLUB.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js"></script>
+    <title>Country Club Bogotá</title>
+    <style>
+        .mySlides {display:none;}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="header__nav">
+            <div class="mainnav__items">
+                <img  loading="lazy" class="topdiv__img" src="./IMGS/logo (1).png" alt="Country Club Bogotá logo">
+            </div>
+            <div class="mainnav__items  lastchild__item">
+                <button class="navb_loginuser">Ingrese Socio<img src="./IMGS/user-login icon.png" alt="icon_userlogin" class="blogin__userimg"></button>
+            </div>
+        </nav>
+    </header>
+    <div class="container__menuopener">
+        <button id="opener__downelement" class="bopener__item">
+            <img class="bopener__img" src=".//IMGS/free-arrow-down-icon-3101-thumb.png" alt="svg_buttonopener">
+        </button>
+        <section>
+            <div id="menu__sections" class="dropd__menu">
+                <div class="dcontainer__sections"><a class="linked__ddm" rel="noreferrer noopener nofollow" target="_blank" href="https://www.countryclubdebogota.com/history.php">HISTORIA</a></div>
+                <div class="dcontainer__sections"><a class="linked__ddm" rel="noreferrer noopener nofollow" target="_blank" href="https://www.countryclubdebogota.com/noticias.php?IDSeccion=1823&Nombre=DEPORTES">DEPORTES</a></div>
+                <div class="dcontainer__sections"><a class="linked__ddm" rel="noreferrer noopener nofollow" target="_blank"href="https://www.countryclubdebogota.com/noticias.php?IDSeccion=1824&Nombre=SALONES">RESTAURANTES</a></div>
+                <div class="dcontainer__sections"><a class="linked__ddm" rel="noreferrer noopener nofollow" target="_blank" href="https://www.countryclubdebogota.com/noticias.php?IDSeccion=1825&Nombre=RESTAURANTES">CANJES</a></div>
+                <div class="dcontainer__sections"><a class="linked__ddm" rel="noreferrer noopener nofollow" target="_blank" href="https://www.countryclubdebogota.com/noticias.php?IDSeccion=1948&Nombre=SOSTENIBILIDAD">SOSTENIBILIDAD</a></div>
+            </div>
+        </section>
+    </div>
+    <div class="loginuser__square">
+        <span class="close-button">X</span>
+        <h2 class="loginsec__title">Ingrese sus datos para iniciar</h2>
+        <form class="logincontainer__form">
+            <label>Ingrese su # de identificacíon.
+                <input type="text" minlength="4" maxlength="10" placeholder="User" required autocomplete="cc-name">
+            </label>
+            <label>Ingrese su # de socio 7 digítos (sin puntos ni comas), si su # es de 6 dígitos, agregue un cero a la izquierda.
+                <input type="password" minlength="4" maxlength="10" placeholder="Password" required autocomplete="cc-name">
+            </label>
+            <a class="linkopener__a" href="" rel="noopener nofollow noreferrer">Olvidé mi contraseña</a>
+            <fieldset>
+                <legend>Term and Conditions</legend>
+                <input type="checkbox" readonly >
+                <p class="ptac">Autorizo de manera expresa el tratamiento de mis datos personales de acuerdo con la Ley 1581 de 2012.  </p>
+            </fieldset>
+            <button class="bform__send">Ingresar</button>
+        </form>
+    </div>
+    <section class="slidercontainer__s">
+        <div class="w3-content w3-section" style="max-width:500px">
+            <img class="mySlides" src="IMGS/685089_Mesa_de_trabajo_7_copia_3.png" style="width:100%">
+            <img class="mySlides" src="IMGS/724979_Mesa_de_trabajo_7_copia_4.png" style="width:100%">
+            <img class="mySlides" src="IMGS/_Imagenes___banner_12.png" style="width:100%">
+        </div>
+    </section>
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 12000); // Change image every 2 seconds
+        }
+        </script>
+        <footer>
+            <div class="footerdiv__item">
+                <ul class="list">
+                    <li class="list__item firstchild">Horario de oficina</li>
+                    <li class="list__item">De martes a viernes de 8:00 a.m. 5:30 p.m.</li>
+                    <li class="list__item"> Sábados de 8:00 a.m. a 3:00 p.m.</li>
+                </ul>
+            </div>
+            <div class="footerdiv__item">
+                <ul class="list">
+                    <li class="list__item firstchild" >Horario de servicio</li>
+                    <li class="list__item">Martes a sábado de 6:00 a.m. a 10:00 p.m</li>
+                </ul>
+            </div>
+            <div class="footerdiv__item">
+                <ul class="list">
+                    <li class="list__item"><a class="link__address" href="https://www.google.com/maps/place/Cl.+127c+%2315-2,+Bogot%C3%A1/data=!4m2!3m1!1s0x8e3f854d9afce96d:0xf2a3a866847c0af5?sa=X&ved=1t:242&ictx=111" rel="noopener nofollow noreferrer" target="_blank">Dirreción</a></li>
+                    <li class="list__item"><a class="link__address" href="https://www.google.com/maps/place/Cl.+127c+%2315-2,+Bogot%C3%A1/data=!4m2!3m1!1s0x8e3f854d9afce96d:0xf2a3a866847c0af5?sa=X&ved=1t:242&ictx=111 " rel="noopener noreferrer nofollow" target="_blank">Calle 127c No 15-02, Bogotá, Colombia</a></li>
+                </ul>
+            </div>
+            <div class="footerdiv__item">
+                <ul class="list">
+                    <li class="list__item firstchild">Teléfonos</li>
+                    <li class="list__item">(571) 6582700 / 6582733</li>
+                </ul>
+            </div>
+            <div class="footerdiv__item bottomdiv">
+                <span class="srights">Copyright / Country Club Bogotá |</span>
+                <span class="linkspan"><a class="linkpa" href="" rel="noreferrer noopener nofollow" target="_blank">Política de Datos Personales  |</a></span>
+                <span class="linkspan"><a class="linkpa" href="" rel="noreferrer noopener nofollow" target="_blank">Política de Datos Personales </a></span>
+            </div>
+        </footer>
+</body>
+</html>
